@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">cloudmuisc</string>
+
+    <string name="signIn">签 到</string>
+    <string name="message">我的消息</string>
+    <string name="vip">VIP会员</string>    
+    <string name="shop">商城</string>    
+    <string name="lineFreeFlow">在线听歌免流量</string>
+    <string name="myFriend">我的好友</string>
+    <string name="peopleRound">附近的人</string>
+    <string name="changeSkin">个性换肤</string>
+    <string name="distinguishSongs">听歌识曲</string>
+    <string name="tiningStopMusic">定时停止播放</string>
+    <string name="sweep">扫一扫</string>
+    <string name="alarmClock">音乐闹钟</string>
+    <string name="carMode">驾车模式</string>
+    <string name="nightMode">夜间模式</string>
+    <string name="setting">设置</string>
+    <string name="exit">退出</string>
+    <string name="fm">私人FM</string>
+    <string name="everyDayRecommend">每日歌曲推荐</string>
+    <string name="rank">云音乐热歌榜</string>
+
+    <string name="more">更多></string>
+    <string name="recommendSong">推荐歌单</string>
+    <string name="privateContent">独家放送</string>
+    <string name="newMusic">最新音乐</string>
+    <string name="recommendMv">推荐Mv</string>
+    <string name="recommendDj">主播电台</string>
+    <string name="settingOrder">调整栏目顺序</string>
+    <string name="seeVideo">看视频,发现更多有趣内容></string>
+    <string name="bottomTipMove">横滑可以切换上下首哦</string>
+
+
+    <string name="order_title">调整栏目顺序</string>
+    <string name="dragTip">想调整首页栏目的顺序? 按住又边的按钮拖动即可</string>
+    <string name="regain_default_order">恢复默认排序</string>
+    <string name="allSongList">全部歌单</string>
+
+    
+
+</resources>

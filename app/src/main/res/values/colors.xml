@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="whiteText">#fafafa</color>
+    <color name="write">#ffffff</color>
+    <color name="roof_terracotta">#AB3319</color>
+    <color name="mexican_red">#AA2721</color>
+    <color name="picton_blue">#51AFEE</color>
+
+   <!--drawer color-->
+    <color name = "leftDrawerGray">#DBDBDA</color>
+
+
+    <color name="video_tag_bg">#767E8F</color>
+
+    <color name="holo_gray_light">#33999999</color>
+
+    <color name="line_color">#EAEDEC</color>
+
+    <color name="order_bg">#F1F4F3</color>
+
+    <color name="bg_frame">#E2E4E3</color>
+
+    <color name="song_type_line">#FAFAFA</color>
+
+    <color name="number_color">#909392</color>
+
+
+
+
+</resources>

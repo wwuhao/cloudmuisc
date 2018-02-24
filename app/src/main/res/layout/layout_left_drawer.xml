@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/leftDrawerGray"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/loginLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/topinfo_ban_bg">
+
+
+        <LinearLayout
+            android:id="@+id/personInfoLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/headIco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_head" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/headIco"
+                android:layout_marginTop="10dp"
+                android:text="阿米尔.浩"
+                android:textColor="@color/write"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/signIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/signIn"
+            android:textColor="@color/write"
+            android:textStyle="bold"
+            android:layout_alignBottom="@+id/personInfoLayout"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shape_rec_bg_sign_in"
+            android:padding="5dp"
+            android:textSize="12dp"
+            android:drawableLeft="@drawable/sign_in"
+            android:drawablePadding="4dp"
+            />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/write"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/message"
+            android:text="@string/message"
+            android:drawableLeft="@drawable/message"
+            style="@style/drawerTextItemStyle"
+            />
+
+        <TextView
+            android:id="@+id/vip"
+            android:text="@string/vip"
+            android:drawableLeft="@drawable/icon_vip"
+            style="@style/drawerTextItemStyle"
+            />
+
+        <TextView
+            android:id="@+id/shop"
+            android:text="@string/shop"
+            android:drawableLeft="@drawable/shop"
+            style="@style/drawerTextItemStyle"
+            />
+
+        <TextView
+            android:id="@+id/flow"
+            android:text="@string/lineFreeFlow"
+            android:drawableLeft="@drawable/flow"
+            style="@style/drawerTextItemStyle"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/write"
+        android:orientation="vertical"
+        android:layout_marginTop="3dp"
+        >
+
+        <TextView
+            android:id="@+id/friend"
+            android:text="@string/myFriend"
+            android:drawableLeft="@drawable/friend"
+            style="@style/drawerTextItemStyle"
+            />
+
+        <TextView
+            android:id="@+id/location"
+            android:text="@string/peopleRound"
+            android:drawableLeft="@drawable/location"
+            style="@style/drawerTextItemStyle"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/write"
+        android:orientation="vertical"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:id="@+id/skin"
+            android:text="@string/changeSkin"
+            android:drawableLeft="@drawable/change_skin"
+            style="@style/drawerTextItemStyle"
+            />
+
+        <TextView
+            android:id="@+id/songs"
+            android:text="@string/distinguishSongs"
+            android:drawableLeft="@drawable/song"
+            style="@style/drawerTextItemStyle"
+            android:layout_below="@+id/skin"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

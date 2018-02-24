@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <data >
+       <variable
+           name="ResultBean"
+           type="com.example.cloudmuisc.bean.RecommendItemBean.ResultBean"/>
+    </data>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/pic"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:url="@{ResultBean.picUrl}"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/write"
+            android:text="@{String.valueOf(ResultBean.playCount)}"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/pic"
+            android:layout_marginTop="5dp"
+            android:maxLines="1"
+            android:text="@{ResultBean.name}"
+            />
+
+    </RelativeLayout>
+
+
+</layout>
+

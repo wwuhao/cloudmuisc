@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <data>
+        <variable
+            name="context"
+            type="android.content.Context"/>
+
+        <variable
+            name="ResultBean"
+            type="com.example.cloudmuisc.bean.DjProgramBean.ResultBean" />
+    </data>
+
+    <FrameLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/coverPicLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:id="@+id/coverPic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    app:url="@{ResultBean.picUrl}"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:textColor="@color/write"
+                    />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@+id/coverPicLayout"
+                android:text="@{ResultBean.name}"
+                android:maxLines="2"
+                />
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</layout>
+
+
+
+
+

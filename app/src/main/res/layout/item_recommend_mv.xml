@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <data>
+        <variable
+            name="ResultBean"
+            type="com.example.cloudmuisc.bean.RecommendMvBean.ResultBean" />
+    </data>
+
+    <FrameLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/coverPic"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                app:url= "@{ResultBean.picUrl}"
+                />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@+id/coverPic"
+                android:layout_marginTop="5dp"
+                android:text="@{ResultBean.name}"
+                android:maxLines="2"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:maxLines="1"
+                android:text="@{ResultBean.artistName}"
+                android:visibility="gone"
+                />
+
+            <!--<TextView
+                android:id="@+id/playNumb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:maxLines="1"
+                android:text="@{String.valueOf(ResultBean.playCount)}"
+                />-->
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</layout>
+
+
+
+
+
