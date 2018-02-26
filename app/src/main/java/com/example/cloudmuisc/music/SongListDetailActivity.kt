@@ -38,6 +38,7 @@ class SongListDetailActivity : AppCompatActivity(), SongListAdapter.OnclickSongI
 
     private fun initView() {
         binding.toolbarLayout.backIv.setOnClickListener(this)
+        binding.toolbarLayout.toolbarTitle.text = "歌单"
         initRecyclerView()
     }
 

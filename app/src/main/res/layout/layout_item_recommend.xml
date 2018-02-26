@@ -5,7 +5,9 @@
     android:layout_height="wrap_content"
     android:paddingLeft="8dp"
     android:paddingRight="8dp"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/white_smoke"
+    >
 
     <RelativeLayout
         android:layout_width="match_parent"

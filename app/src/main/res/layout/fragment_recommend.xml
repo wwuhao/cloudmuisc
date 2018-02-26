@@ -4,6 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white_smoke"
     android:orientation="vertical">
 
     <ScrollView
@@ -97,7 +98,9 @@
                 android:id="@+id/contentLayout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical" />
+                android:orientation="vertical"
+                android:background="@color/white_smoke"
+                />
 
 
             <LinearLayout
@@ -134,7 +137,9 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp">
+        android:layout_height="60dp"
+        android:background="@color/write"
+        >
 
         <ImageView
             android:id="@+id/coverPic"

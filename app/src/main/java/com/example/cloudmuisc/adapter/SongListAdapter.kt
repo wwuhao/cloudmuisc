@@ -35,6 +35,11 @@ class SongListAdapter: RecyclerView.Adapter<SongListAdapter.SongListHolder>() {
     override fun onBindViewHolder(holder: SongListHolder?, position: Int) {
         var resultBean =  data!![position]
         holder?.itemSongListBinding?.resultBean = resultBean
+        if (resultBean.playCount > 10000) {
+            val playNumb = resultBean.playCount/10000
+            holder?.itemSongListBinding?.playNumb?.text = playNumb.toInt().toString() + "万"
+        }
+
         holder?.itemSongListBinding?.root?.setOnClickListener({
             v: View? ->
             onclickSongItemListen1?.onClickSongItem(resultBean.id)

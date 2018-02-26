@@ -282,7 +282,6 @@ class RecommendFragment : Fragment(), OnItemClickListener, View.OnClickListener 
                 }
     }
 
-
     override fun onClick(v: View?) {
         when(v?.id) {
             R.id.orderTv ->  {
@@ -294,7 +293,6 @@ class RecommendFragment : Fragment(), OnItemClickListener, View.OnClickListener 
             }
         }
     }
-
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         if (requestCode == 200 && resultCode == 0) {
