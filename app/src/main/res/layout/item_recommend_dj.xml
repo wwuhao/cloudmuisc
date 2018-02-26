@@ -50,7 +50,7 @@
             <TextView
                 android:id="@+id/name"
                 android:layout_width="wrap_content"
-                android:layout_height="30dp"
+                android:layout_height="35dp"
                 android:layout_below="@+id/coverPicLayout"
                 android:text="@{ResultBean.name}"
                 android:maxLines="2"

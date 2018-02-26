@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/cloudmuisc1.iml" filepath="$PROJECT_DIR$/cloudmuisc1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloudmuisc.iml" filepath="$PROJECT_DIR$/cloudmuisc.iml" />
     </modules>
   </component>
 </project>

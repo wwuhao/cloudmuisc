@@ -107,7 +107,15 @@ class RecommendFragment : Fragment(), OnItemClickListener, View.OnClickListener 
         val songListRecycler = recommendSong.findViewById<RecyclerView>(R.id.itemRecyclerView)
         val recommendListMore = recommendSong.findViewById<TextView>(R.id.recommendListMore)
         recommendListMore.setOnClickListener(this)
-        songListRecycler.layoutManager = GridLayoutManager(context,3)
+        songListRecycler.layoutManager = object:GridLayoutManager(context,3) {
+            override fun canScrollVertically(): Boolean {
+                return false
+            }
+
+            override fun canScrollHorizontally(): Boolean {
+                return false
+            }
+        }
         songListRecycler.addItemDecoration(RecommendItemDecoration(10))
         itemTitle.text = getString(R.string.recommendSong)
         recommendAdapter = RecommendAdapter()
@@ -122,7 +130,14 @@ class RecommendFragment : Fragment(), OnItemClickListener, View.OnClickListener 
         val itemTitle = privateContentView.findViewById<TextView>(R.id.itemTitle)
         itemTitle.text = getString(R.string.privateContent)
         val privateRecycler = privateContentView.findViewById<RecyclerView>(R.id.itemRecyclerView)
-        var layoutManager = GridLayoutManager(context,2)
+        var layoutManager = object :GridLayoutManager(context,2) {
+            override fun canScrollHorizontally(): Boolean {
+                return false
+            }
+            override fun canScrollVertically(): Boolean {
+                return false
+            }
+        }
         privateRecycler.layoutManager = layoutManager
         privateRecycler.addItemDecoration(RecommendItemDecoration(10))
         layoutManager.spanSizeLookup = object :GridLayoutManager.SpanSizeLookup() {
@@ -146,7 +161,14 @@ class RecommendFragment : Fragment(), OnItemClickListener, View.OnClickListener 
         val itemTitle = mvView.findViewById<TextView>(R.id.itemTitle)
         itemTitle.text = getString(R.string.recommendMv)
         val newMusicRecycler = mvView.findViewById<RecyclerView>(R.id.itemRecyclerView)
-        newMusicRecycler.layoutManager = GridLayoutManager(context,2)
+        newMusicRecycler.layoutManager = object :GridLayoutManager(context,2) {
+            override fun canScrollHorizontally(): Boolean {
+                return false
+            }
+            override fun canScrollVertically(): Boolean {
+                return false
+            }
+        }
         newMusicRecycler.addItemDecoration(RecommendItemDecoration(10))
         mvAdapter = RecommendMvAdapter()
         newMusicRecycler.adapter = mvAdapter
@@ -161,7 +183,15 @@ class RecommendFragment : Fragment(), OnItemClickListener, View.OnClickListener 
         val itemTitle = djView.findViewById<TextView>(R.id.itemTitle)
         itemTitle.text = getString(R.string.recommendDj)
         val newMusicRecycler = djView.findViewById<RecyclerView>(R.id.itemRecyclerView)
-        newMusicRecycler.layoutManager = GridLayoutManager(context,2)
+        newMusicRecycler.layoutManager = object :GridLayoutManager(context,2) {
+            override fun canScrollHorizontally(): Boolean {
+                return false
+            }
+
+            override fun canScrollVertically(): Boolean {
+                return false
+            }
+        }
         newMusicRecycler.addItemDecoration(RecommendItemDecoration(10))
          djAdapter = DjProgramAdapter()
         newMusicRecycler.adapter = djAdapter
